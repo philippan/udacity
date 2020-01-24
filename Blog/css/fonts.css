@@ -1,147 +1,152 @@
-@media only screen and (max-width: 2400px) {
-
-    .bold {
-        font-weight: 800;
-    }
-
-    .italic {
-        text-decoration: none;
-        font-style: italic;
-    }
-
-    .underline {
-        text-decoration: underline;
-    }
-
-    span.bold, span.italic, span.underline {
-        color: #ffa500;
-        font-weight: 900;
-    }
-
-    /* Element styles */
-
-    h1 {
-        font-family: 'Noto Sans', sans-serif;
-        font-size: 45px;
-        font-weight: 500;
-        color: #111111;
-    }
-
-    h2 {
-        font-family: 'Noto Sans', sans-serif;
-        font-size: 32px;
-        font-weight: 500;
-        color: #111111;
-    }
-
-    h3 {
-        font-family: 'Noto Sans', sans-serif;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 18px;
-        color: #111111;
-    }
-
-
-    p {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 26px;
-        color: #242424;
-    }
-
-    footer p {
-        text-align: center;
-    }
-
-    a {
-        font-family: 'Roboto', sans-serif;
-        font-size: 16px;
-        font-weight: 700;
-        color: #242424;
-        text-decoration: none;
-    }
-
-    a:hover {
-        text-decoration: underline;
-        text-decoration-color: color: #242424;
-    }
-
-    a.buttonLink {
-        margin: 0px;
-    }
-
-    a.navLinks {
-
-        display: block;
-        float: right;
-        font-weight: 800;
-        padding-top: 22.5px;
-        padding-left: 24px;
-        color: rgb(29, 120, 244);
-        margin: auto;
-
-    }
-
-    a.cta {
-
-    }
-
-    figcaption {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400;
-        font-size: 13px;
-        line-height: 13px;
-        color: #242424;
-    }
-
-    button.secondaryButton {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 800;
-        font-size: 16px;
-        line-height: 1.24;
-        color: #ffffff;
-        padding: 8px 24px;
-        border: 0px;
-        border-radius: 2px;
-        background-color: #1d78f4;
-        margin: 0px;
-        cursor: pointer;
-    }
-
-    q {
-        font-family: 'Noto Sans', sans-serif;
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 30px;
-        color: #242424;
-    }
-
-    /* Post page styles */
-
-    .author h3, .author p {
-        margin: 0 0 12px 0;
-    }
-
-    .author h3:first-of-type {
-        margin-top: 24px;
-    }
-
-    .bio p {
-        margin-top: 0px;
-    }
-
+.bold {
+    font-weight: 800;
 }
 
-@media only screen and (max-width: 375px) {
+.italic {
+    text-decoration: none;
+    font-style: italic;
+}
 
-  h1 {
-      font-size: 38px;
-  }
+.underline {
+    text-decoration: underline;
+}
 
-  a.navLinks {
-      padding-left: 16px;
-  }
+span.bold, span.italic, span.underline {
+    color: #ffa500;
+    font-weight: 900;
+}
+
+/* Element styles */
+
+h1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+    color: #111111;
+    margin: 0px;
+}
+
+h2 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: #111111;
+}
+
+h3 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #111111;
+}
+
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #242424;
+}
+
+footer p {
+    text-align: center;
+}
+
+a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #242424;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: color: #242424;
+}
+
+
+a.buttonLink {
+    margin: 0px;
+}
+
+
+a.navLinks {
+    display: block;
+    float: right;
+    font-weight: 800;
+    padding-top: 22.5px;
+    padding-left: 24px;
+    color: rgb(29, 120, 244);
+    margin: auto;
+}
+
+
+figcaption {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+    color: #242424;
+}
+
+
+button.secondaryButton {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 1.24;
+    color: #ffffff;
+    padding: 8px 24px;
+    border: 0px;
+    border-radius: 2px;
+    background-color: #1d78f4;
+    margin: 0px;
+    cursor: pointer;
+}
+
+
+q {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #242424;
+}
+
+
+/* Post page styles */
+
+
+.author h3, .author p {
+    margin: 0 0 12px 0;
+}
+
+
+.author h3:first-of-type {
+    margin-top: 24px;
+}
+
+
+.bio p {
+    margin-top: 0px;
+}
+
+
+@media (max-width: 375px) {
+
+
+    h1 {
+        font-size: 38px;
+    }
+
+
+    a.navLinks {
+        padding-left: 16px;
+        padding-right: 0px;
+    }
+
 
 }

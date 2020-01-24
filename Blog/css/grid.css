@@ -1,51 +1,128 @@
-@media only screen and (max-width: 2400px) {
+@media (min-width: 901px) {
+
 
     .grid {
-     display: grid;
-     grid-template-columns: repeat(12, 1fr);
-     grid-gap: 24px;
-     max-width: 960px;
-     margin: 0px auto;
+         display: grid;
+         grid-template-columns: repeat(12, 1fr);
+         grid-gap: 24px;
+         max-width: 1440px;
+         margin: 0px auto;
+    }
+
+
+    .flexRow {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+
+
+    .flexCol {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
     }
 
 
     .navbar {
-      grid-area: 1 / 1 / span 1 / span 12;
+        grid-area: 1 / 1 / span 1 / span 12;
     }
 
-    .flexRow {
-      display: flex;
-      flex-direction: row;
-      justify-content: left;
-    }
-
-    .flexCol {
-      display: flex;
-      flex-direction: column;
-      justify-content: left;
-    }
 
     /* Homepage */
 
+
     .stream {
-          grid-area: 2 / 1 / span 1 / span 12;
+        grid-area: 2 / 1 / span 1 / span 12;
     }
 
+
     footer.home {
-      grid-area: 3 / 1 / span 1 / span 12;
+        grid-area: 3 / 1 / span 1 / span 12;
     }
+
 
     /* Post page */
 
+
     .postTitle {
-
         grid-area: 2 / 1 / span 1 / span 12;
-
     }
+
 
     .postAside {
         grid-area: 3 / 1 / span 1 / span 3;
+    }
 
+
+    .bio {
+        grid-area: 3 / 4 / span 1 / span 9;
+    }
+
+
+    footer.postFooter {
+        grid-area: 5 / 1 / span 1 / span 12;
+    }
+
+
+}
+
+
+@media (min-width: 600px) and (max-width: 900px) {
+
+    .grid {
+         display: grid;
+         grid-template-columns: repeat(12, 1fr);
+         grid-gap: 24px;
+         min-width: 600px;
+         max-width: 900px;
+         margin: 0px auto;
+         padding: 0px 100px;
+     }
+
+
+     .navbar {
+         grid-area: 1 / 1 / span 1 / span 12;
+    }
+
+
+    .flexRow {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+
+
+    .flexCol {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+
+
+    /* Homepage */
+
+
+    .stream {
+        grid-area: 2 / 1 / span 1 / span 12;
+    }
+
+
+    footer.home {
+        grid-area: 3 / 1 / span 1 / span 12;
+    }
+
+
+    /* Post page */
+
+
+    .postTitle {
+        grid-area: 2 / 1 / span 1 / span 12;
+    }
+
+
+    .postAside {
+        grid-area: 3 / 1 / span 1 / span 3;
     }
 
     .bio {
@@ -53,48 +130,62 @@
     }
 
     footer.postFooter {
-      grid-area: 5 / 1 / span 1 / span 12;
+        grid-area: 5 / 1 / span 1 / span 12;
     }
 
 }
 
-@media only screen and (max-width: 960px) {
-    .grid {
-          margin: 0px 100px;
-    }
-}
-
-@media only screen and (max-width: 375px) {
+@media (max-width: 375px) {
 
     .grid {
-         display: grid;
-         grid-template-columns: repeat(2, 1fr);
-         grid-gap: 24px;
-         width: 100%;
-         margin: 0px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 24px;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
     }
 
-    .stream .flexRow {
-      display: flex;
-      flex-direction: column;
-      justify-content: left;
-    }
 
     .navbar {
-      grid-area: 1 / 1 / span 1 / span 2;
+        grid-area: 1 / 1 / span 1 / span 2;
     }
+
+    .flexRow {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+
+    .flexCol {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+
 
     /* Homepage */
 
+
     .stream {
-          grid-area: 2 / 1 / span 1 / span 2;
+        grid-area: 2 / 1 / span 1 / span 2;
     }
+
+
+    .stream.flexRow {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+
 
     footer.home {
-      grid-area: 3 / 1 / span 1 / span 2;
+        grid-area: 3 / 1 / span 1 / span 2;
     }
 
+
     /* Post page */
+
 
     .postTitle {
 
@@ -102,17 +193,22 @@
 
     }
 
+
     .postAside {
+
         grid-area: 3 / 1 / span 1 / span 2;
 
     }
+
 
     .bio {
         grid-area: 4 / 1 / span 1 / span 2;
     }
 
+
     footer.postFooter {
-      grid-area: 5 / 1 / span 1 / span 2;
+        grid-area: 5 / 1 / span 1 / span 2;
     }
+
 
 }
