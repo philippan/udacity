@@ -14,7 +14,8 @@ The Landing Page project is a development exercise to gain familiarity with comm
 
 One challenge was letting users know which section they were on. I used the .addEventListener() to trigger a function that would check if a section were in a viewport. After that another function decides whether More than one section, however, could be in the viewport at once.
 
-``function isActive() {
+```
+function isActive() {
 
     let checker = inView();
     let sects = document.querySelectorAll("section");
@@ -34,14 +35,16 @@ One challenge was letting users know which section they were on. I used the .add
             }
         }
     }
-}``
+}
+```
 
 
 ## Dynamically Generated Nav Links
 
 Needing to update the HTML whenever a new section is not scalable. I relied on a combination of the .querySelectorAll() method, for...of loop, and object literals to collect existing and new sections, save their attributes, and create link names and hrefs.
 
-``function navBuild() {
+```
+function navBuild() {
     navList.innerHTML = "";
     let sects = document.querySelectorAll("section");
     for (let sect of sects) {
@@ -52,7 +55,8 @@ Needing to update the HTML whenever a new section is not scalable. I relied on a
         navList.appendChild(listNode);
     }
     scrollBuild();
-}``
+}
+```
 
 
 ## Responsive Header
@@ -61,7 +65,8 @@ Using the .addEventListener() method to hide the header on scroll is straightfor
 
 As a workaround I set a timer that assumed would assume scrolling ended within a second. The timer, however, would be continually reset until scrolling actually ended, i.e., the .addEventListner() stopped firing. I  relied on the .setTimeout() and .clearTimeout() methods to accomplish this.
 
-``function pageHeaderCheck() {
+```
+function pageHeaderCheck() {
     let isScrolling;
     window.addEventListener("scroll", function() {
         window.clearTimeout(isScrolling);
@@ -70,4 +75,5 @@ As a workaround I set a timer that assumed would assume scrolling ended within a
             pageHeader.classList.remove("page__header__whileScroll");
         }, 300);
     }, false);
-}``
+}
+```
