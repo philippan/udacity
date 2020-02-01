@@ -78,9 +78,10 @@ function scrollBuild() {
 }
 // Decide which <sect> is the active one, esp. if multiple are in the viewport
 function isActive() {
+
     let checker = inView();
     let sects = document.querySelectorAll("section");
-    /* console.log(checker + " " + sects[0]); */
+
     for (let i = 0; i < sects.length; i++) {
         if (checker[0] == true) {
             for (let sect of sects) {

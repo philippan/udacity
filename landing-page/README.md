@@ -1,13 +1,21 @@
 # Landing Page Project
 
-## Table of Contents
+## Introduction
 
-* [Instructions](#instructions)
+The Landing Page project is a development exercise to gain familiarity with common DOM interfaces, properties, and methods and when to the use them to scale code and enhance the user experience. These include:
 
-## Instructions
+* .addEventListener()
+* .querySelector()
+* for...of loop
+* template literals
+* .setTimeout()
 
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+## Active Sections
 
-To get started, open `js/app.js` and start building out the app's functionality
+One challenge was letting users know which section they were on. I used the .addEventListener() to trigger a function `` that would check if a section were in a viewport. After that another function decides whether More than one section, however, could be in the viewport at once.
 
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
+
+## Dynamically Generated Nav Links
+
+
+## Responsive Header
